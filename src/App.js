@@ -111,8 +111,15 @@ function App() {
 
   return (
     <div className="App">
+      <div className="center">
+        <h1>Fun Facts and Intresting Questions</h1>
+      </div>
       <div className="whiteBox">
-        <h2>Exploring People Ideologies With Chickens</h2>
+        <h2>Quick Look</h2>
+        <p>Understanding people is the same thing as understanding chickens. There are plenty of places to look for information on people, so why also look into the interactions people have with chickens? This reaserch paper goes in depth on why people should look twords chickens to better look at themselves.</p>
+      </div>
+      <div className="whiteBox">
+        <h2>Exploring Peoples Ideologies With Chickens</h2>
         <p>
           Chickens are not usually considered to be the center of very serious
           topics. This idea is especially true if that very topic is meant to be
@@ -141,7 +148,8 @@ function App() {
       <div className="buttons">
         {pressed ? (
           <button className="mainInfo" onClick={() => isPressed(!pressed)}>
-            {essayText}
+            <h2>A Mirror Made of Feathers</h2>
+            <p>{essayText}</p>
           </button>
         ) : (
           <button className="mainInfoEmpty" onClick={() => isPressed(!pressed)}>
@@ -150,7 +158,8 @@ function App() {
         )}
         {info ? (
           <button className="mainInfo" onClick={() => isInfo(!info)}>
-            <div className="sourceEntry">{essayProof}</div>
+            <h2>References</h2>
+            <p className="sourceEntry">{essayProof}</p>
           </button>
         ) : (
           <button className="mainInfoEmpty" onClick={() => isInfo(!info)}>

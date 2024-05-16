@@ -3,6 +3,29 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   word-wrap: break-word;
 }
+h1, h2{
+  color: #008cb4;
+  width: 100%;
+}
+h1{
+  width: 90%;
+  word-spacing: 5px;
+}
+h2{
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 90%;
+  background-color: #fff;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .App, body {
   width: 100%;
@@ -17,6 +40,16 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   gap: 10px;
 }
+button{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 .whiteBox{
   display: flex;
@@ -30,6 +63,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 5%;
   border-radius: 10px;
   margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 /*buttoons half */
 .mainInfo, .mainInfoEmpty{
@@ -51,7 +85,7 @@ h1, h2, h3, h4, h5, h6, p {
 .mainInfo {
   height: 400px;
   overflow-y: scroll;
-  padding: 20px; /* Add padding to create space around the text */
+  padding: 10px 20px 20px 20px; /* Add padding to create space around the text */
 }
 
 .mainInfo h5,
@@ -83,6 +117,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .sourceEntry {
+  width: 100%;
   margin-bottom: 20px; /* Add margin between each source entry */
 }
 
@@ -171,6 +206,7 @@ i{
   font-size: 40px;
   color: #fff;
   word-spacing: 10px;
+  letter-spacing: 2px;
 }
 .cards div i{
   display: flex;
